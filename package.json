@@ -1,18 +1,31 @@
 {
-  "name": "nodejs",
-  "version": "1,0,0",
-  "description": "Thsi is a node project",
+  "name": "opi-edge-monitor",
+  "version": "1.0.0",
+  "description": "System status aggregation API for Orange Pi Edge Nodes",
   "main": "index.js",
-  "author": "",
-  "repository": "",
+  "author": "Neri <admin@localhost>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/torvalds/linux"
+  },
+  "keywords": [
+    "monitor",
+    "system",
+    "dashboard",
+    "orange-pi",
+    "api"
+  ],
   "license": "MIT",
-  "private": false,
+  "private": true,
   "scripts": {
     "dev": "node index.js",
     "start": "node index.js"
   },
   "dependencies": {
-    "axios": "latest"
+    "axios": "^1.6.0",
+    "express": "^4.18.2",
+    "systeminformation": "^5.21.0",
+    "dotenv": "^16.3.1"
   },
   "engines": {
     "node": ">=14"
